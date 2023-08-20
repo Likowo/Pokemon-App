@@ -14,15 +14,22 @@ app.get('/', (req,res) => {
 })
 
 
-// Route (/pokemon) to display pokemon data as json in the browser (app.get)
+/*/ Route (/pokemon) to display pokemon data as json in the browser (app.get)
 
 // app.get('/pokemon', (req,res) => {
 //   res.send(pokemon)
 // })
     //*** Changing your /pokemon route to (res.render) your Index.jsx file */
-app.get('/pokemon',(req,res) => {
-  res.render('Index')
-  //  res.render("Index", { header:'See All The Pokemon' })
+// app.get('/pokemon',(req,res) => {
+//   res.render('Index')
+//   //  res.render("Index", { header:'See All The Pokemon' })
+// });
+
+// Let us update the index route(or pokemon route) to show all Pokemon in an unordered list
+
+app.get('/pokemon',async (req,res) => {
+//  const seeAllPokemon = await pokemon.find({})
+   res.render('Index', {allPokemon:pokemon }); //pass props allPokemon from Index.js as (key) and variable seeAllPokemon as (value)
 });
 
 
