@@ -33,8 +33,12 @@ app.get('/pokemon',async (req,res) => {
 });
 
 // Show route with /:id params i.e. Setting up your show route
+// app.get('/pokemon/:id', (req,res) => {
+//   res.send(req.params.id)
+// })
+    //**Updating the Show route to render the show view with the pokemon data  */ /
 app.get('/pokemon/:id', (req,res) => {
-  res.send(req.params.id)
+  res.render('show',{allPokemon:pokemon })
 })
 
 

@@ -19,7 +19,7 @@ const ucFirst = (x) => {
             {pokemon.map((poke, i) => {
                 return (
                     <div key={i} >
-                        {/* Display Pokemon infor on a list */}
+                        {/* Display Pokemon infor on a list: And Link your Index.jsx to your Show.jsx  using an <a> tag set dynamically with jsx i.e. with {} */}
                         <li>
                         <a href={`/pokemon/${i}`}>
                             <h3>{ucFirst(poke.name)}</h3>
@@ -63,4 +63,4 @@ const ucFirst = (x) => {
 
 }
 
-export default Index
+export default Index;
