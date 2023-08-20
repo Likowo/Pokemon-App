@@ -19,7 +19,7 @@ app.get('/', (req,res) => {
 // app.get('/pokemon', (req,res) => {
 //   res.send(pokemon)
 // })
-
+    //*** Changing your /pokemon route to (res.render) your Index.jsx file */
 app.get('/pokemon',(req,res) => {
   res.render('Index')
   //  res.render("Index", { header:'See All The Pokemon' })
