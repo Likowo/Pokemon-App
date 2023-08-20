@@ -4,6 +4,7 @@ import React from 'react'
 function Index(props) {
 const pokemon = props.allPokemon;
 
+// Fxn to change the first letter of every name from small to capital letter.
 const ucFirst = (x) => {
     let firstChar = x.charAt(0);
     let remaining = x.substring(1);
@@ -19,11 +20,16 @@ const ucFirst = (x) => {
                 return (
                     <div key={i} >
                         {/* Display Pokemon infor on a list */}
-                        
-                        <div>
+                        <li>
+                        <a href={`/pokemon/${i}`}>
                             <h3>{ucFirst(poke.name)}</h3>
+                            </a>
+                        </li>
+                        
+                            
+                            
                             {/* <img src={poke.img} alt="" /> */}
-                        </div>
+                       
 
 
                         
