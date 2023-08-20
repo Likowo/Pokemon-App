@@ -32,6 +32,11 @@ app.get('/pokemon',async (req,res) => {
    res.render('Index', {allPokemon:pokemon }); //pass props allPokemon from Index.js as (key) and variable seeAllPokemon as (value)
 });
 
+// Show route with /:id params i.e. Setting up your show route
+app.get('/pokemon/:id', (req,res) => {
+  res.send(req.params.id)
+})
+
 
 
 
