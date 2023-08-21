@@ -11,7 +11,7 @@ function Show(props) {
   };
 
   return (
-    <div className="seeAllPokemons">
+    <div className="seeAllPokemonsWrapper">
       <link rel="stylesheet" type="text/css" href="/css/style.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <h1>Gotta Catch 'Em All</h1>

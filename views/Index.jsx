@@ -14,12 +14,13 @@ function Index(props) {
     <div className="seeAllPokemonsWrapper">
       <link rel="stylesheet" type="text/css" href="/css/style.css" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      
+
       <h1>See All The Pokemon!!</h1>
       <nav>
         <a href="/pokemon/new">Create a New Pokemon</a>
     </nav>
       <h2> List of Pokemons</h2>
+      
       <a href="/addList"> Add to List of Pokemon</a>
       <form action="/deleteall?_method=DELETE"
       method="POST"> 
@@ -42,19 +43,6 @@ function Index(props) {
       </ul>
     </div>
   );
-
-  // const myStyle = {
-  //     color: '#ffffff',
-  //     backgroundColor: '#000000',
-  //     };
-
-  // class MyFirstComponent extends React.Component() {
-  // return (
-  //   <div  style={myStyle}>
-  //   <h3>My First React Component!</h3>
-  //   </div >
-  // )
-  // };
 }
 
 export default Index;

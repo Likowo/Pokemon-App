@@ -35,7 +35,11 @@ mongoose.connection.once("open", () => {
 
 //First Route (app.get)
 app.get('/', (req,res) => {
-  res.send(` <h1 style="color:blue;text-align:center; font-style: italic;">Welcome to the Pokemon App! </h1>`)
+  res.send(
+    ` <h1 style="color:blue;text-align:center; font-style: italic; ">Welcome to the Pokemon App! <a href="/pokemon">👉</a> </h1>`
+
+
+  )
 })
 
 /*/ Route (/pokemon)or Index  to display pokemon data as json in the browser (app.get)
