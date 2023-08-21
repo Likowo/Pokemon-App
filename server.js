@@ -16,6 +16,7 @@ app.engine("jsx", require("express-react-views").createEngine());
 //Mount Middleware (app.use)
 app.use(express.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
+app.use(express.static(__dirname + '/public'));
 app.use((req, res, next) => {
   console.log('I run for all routes');
   next();
@@ -34,7 +35,7 @@ mongoose.connection.once("open", () => {
 
 //First Route (app.get)
 app.get('/', (req,res) => {
-  res.send('Welcome to the Pokemon App!')
+  res.send(` <h1 style="color:blue;text-align:center; font-style: italic;">Welcome to the Pokemon App! </h1>`)
 })
 
 /*/ Route (/pokemon)or Index  to display pokemon data as json in the browser (app.get)

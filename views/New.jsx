@@ -3,6 +3,7 @@ import React from 'react'
 function New() {
   return (
     <div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <h1>Page to create a new pokemon</h1>
         {/* NOTE: action will be the route, method will be the HTTP Method. NB: HTTP verb is Create, while HTTP method is POST */}
         <form action="/pokemon/new" method='POST'>
