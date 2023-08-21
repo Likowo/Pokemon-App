@@ -13,14 +13,22 @@ function Index(props) {
   return (
     <div className="seeAllPokemons">
       <h1>See All The Pokemon!!</h1>
+      <nav>
+        <a href="/pokemon/new">Create a New Pokemon</a>
+    </nav>
       <h2> List of Pokemons</h2>
+      <a href="/addList"> Add to List of Pokemon</a>
+      <form action="/deleteall?_method=DELETE"
+      method="POST"> 
+        <input type="submit"  name="" value="Delete All Pokemon"  />
+      </form>
       <ul>
         {pokemon.map((poke, i) => {
           return (
             <div key={i}>
               {/* Display Pokemon infor on a list: And Link your Index.jsx to your Show.jsx  using an <a> tag set dynamically with jsx i.e. with {} */}
               <li>
-                <a href={`/pokemon/${i}`}>
+                <a href={`/pokemon/${poke.id}`}>
                   <h3>{ucFirst(poke.name)}</h3>
                 </a>
               </li>
