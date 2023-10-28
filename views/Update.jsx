@@ -14,6 +14,9 @@ function Update(props) {
             <input type="submit" name='' value="Update pokemon information" />
         </form>
         
+        <a href={`/pokemon`}>
+        <span> 👈BACK </span>
+      </a>
        
     </div>
   )

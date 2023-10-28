@@ -14,6 +14,9 @@ function New() {
         </form>
         {/* NB: After creating form , Now go to server.js and create a POST request to /pokemon.
          Why?? Since the form  tells the browser to create a POST request to /pokemon, we'll need to set up a route handler for this kind of request*/}
+         <a href={`/pokemon`}>
+        <span> 👈BACK </span>
+      </a>
        
     </div>
   )

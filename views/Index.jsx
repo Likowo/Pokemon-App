@@ -19,13 +19,13 @@ function Index(props) {
       <nav>
         <a href="/pokemon/new">Create a New Pokemon</a>
     </nav>
-      <h2> List of Pokemons</h2>
       
-      <a href="/addList"> Add to List of Pokemon</a>
+      <a href="/addList"> Add to List of Pokemon - Reloads Created List of Pokemon</a>
       <form action="/deleteall?_method=DELETE"
       method="POST"> 
         <input type="submit"  name="" value="Delete All Pokemon"  />
       </form>
+      <h2> List of Pokemons (Click to See Pokemon)</h2>
       <ul>
         {pokemon.map((poke, i) => {
           return (
